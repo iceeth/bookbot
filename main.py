@@ -3,11 +3,9 @@ def main ():
 
 def get_books_text():
     with open('./books/frankenstein.txt', encoding="utf-8") as f:
-        print(f)
-        Book = f.read()
-    print(Book)
+        file_contents = f.read()
+        words = file_contents.split()
+        Num_Words = len(words)
+        print(f"{Num_Words} words found in the document")
     
-    
-
-
 main()
